@@ -126,7 +126,7 @@ async def genStr(_, msg: Message):
         await client.disconnect()
         text = "String Session is Successfully Generated.\nHere is Ur String Session 👇\n\n`{session_string}`."
       
-        )
+       
         await bot.send_message(chat.id, text, reply_markup=reply_markup)
     except Exception as e:
         await bot.send_message(chat.id ,f"**ERROR:** `{str(e)}`")

@@ -122,7 +122,7 @@ async def genStr(_, msg: Message):
         return
     try:
         session_string = await client.export_session_string()
-        await client.send_message("me", f"#PYROGRAM #STRING_SESSION\n\n```{session_string}``` \n\nBy [@pyrogram_string_genrobot](tg://openmessage?user_id=1472531255) \nA Bot By @Avika_5555 \nThanks for using our bot 👉✨")
+        await client.send_message("me", f"#PYROGRAM #STRING_SESSION\n\n```{session_string}``` \n\nBy [@String_Sessionnbot](tg://openmessage?user_id=1901001651) \nA Bot By itz_Your_ALPHA \nThanks for using our bot 👉✨")
         await client.disconnect()
         text = "String Session is Successfully Generated.\nClick on Below Button."
         reply_markup = InlineKeyboardMarkup(

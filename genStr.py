@@ -12,9 +12,9 @@ from pyrogram.errors import (
     PhoneCodeInvalid, PhoneCodeExpired
 )
 
-API_TEXT = """Hi, {}. 😉
-✨This is Pyrogram's String Session Generator Bot. I will generate String Session of your Telegram Account.✨
-👉 By your beloved @avika_5555 and @mrdark_genuine 💗🔥
+API_TEXT = """Hi, {}. ♥️
+📌This is Pyrogram's String Session Generator Bot. I will generate String Session of your Telegram Account.✨
+
 Now send your `API_ID` to Start Generating Session."""
 HASH_TEXT = "Now send your `API_HASH`.\n\nPress /cancel to Cancel Task."
 PHONE_NUMBER_TEXT = (
@@ -149,15 +149,15 @@ It needs `API_ID`, `API_HASH`, Phone Number and One Time Verification Code. \
 Which will be sent to your Phone Number.
 You have to put **OTP** in `1 2 3 4 5` this format. __(Space between each numbers!)__
 **NOTE:** If bot not Sending OTP to your Phone Number than send /restart Command and again send /start to Start your Process. 
-Must Join Channel for Bot Updates !!
+
 """
     reply_markup = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton('Developer', url='https://t.me/Avika_5555')
+                InlineKeyboardButton('Develoer', url='https://t.me/Noob_hacker_op')
             ],
             [
-                InlineKeyboardButton('Contributor', url='https://t.me/mrdark_genuine'),
+                InlineKeyboardButton('♥️', url='https://t.me/Noob_hacker_op'),
             ]
         ]
     )

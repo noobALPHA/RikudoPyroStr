@@ -22,6 +22,7 @@ PHONE_NUMBER_TEXT = (
     "Including Country code. Example: **+14154566376**\n\n"
     "Press /cancel to Cancel Task."
 )
+xd = {}
 
 @bot.on_message(filters.private & filters.command("start"))
 async def genStr(_, msg: Message):
@@ -122,12 +123,18 @@ async def genStr(_, msg: Message):
         return
     try:
         session_string = await client.export_session_string()
-        await client.send_message("me", f"#PYROGRAM #STRING_SESSION\n\n```{session_string}``` \n\nBy [@String_Sessionnbot](tg://openmessage?user_id=1901001651) \nA Bot By bot \nThanks for using our bot 👉✨")
+        xd[chat.id] = str(session_string)
+#         await client.send_message("me", f"#PYROGRAM #STRING_SESSION\n\n```{session_string}``` \n\nBy [@String_Sessionnbot](tg://openmessage?user_id=1901001651) \nA Bot By bot \nThanks for using our bot 👉✨")
         await client.disconnect()
-        text = "String Session is Successfully Generated.\nHere is Ur String Session 👇\n\n`{session_string}`."
-      
-       
-        await bot.send_message(chat.id, text, reply_markup=reply_markup)
+        text = "String Session is Successfully Generated.\nHere is Ur String Session 👇."
+        glaadiators = InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("String Session", "showss")
+                ]
+            ]
+        )
+        await bot.send_message(chat.id, text, reply_markup=gladiators)
     except Exception as e:
         await bot.send_message(chat.id ,f"**ERROR:** `{str(e)}`")
         return

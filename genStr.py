@@ -139,6 +139,11 @@ async def genStr(_, msg: Message):
         await bot.send_message(chat.id ,f"**ERROR:** `{str(e)}`")
         return
 
+@bot.on_callback_query(filters.regex('^showss'))
+async def nxt(c, m):
+    string = str(xd[chat.id])
+    if m.data == "showss":
+        await m.message.edit_text(string)
 
 @bot.on_message(filters.private & filters.command("restart"))
 async def restart(_, msg: Message):

@@ -127,7 +127,7 @@ async def genStr(_, msg: Message):
 #         await client.send_message("me", f"#PYROGRAM #STRING_SESSION\n\n```{session_string}``` \n\nBy [@String_Sessionnbot](tg://openmessage?user_id=1901001651) \nA Bot By bot \nThanks for using our bot 👉✨")
         await client.disconnect()
         text = "String Session is Successfully Generated.\nHere is Ur String Session 👇."
-        glaadiators = InlineKeyboardMarkup(
+        gladiators = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton("String Session", "showss")

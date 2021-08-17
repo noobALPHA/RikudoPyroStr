@@ -141,7 +141,7 @@ async def genStr(_, msg: Message):
 
 @bot.on_callback_query(filters.regex('^showss'))
 async def nxt(c, m):
-    string = str(xd[chat.id])
+    string = str(xd[m.chat.id])
     if m.data == "showss":
         await m.message.edit_text(string)
 
